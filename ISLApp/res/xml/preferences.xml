@@ -1,0 +1,28 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="Settings" >
+
+    <PreferenceCategory android:title="General" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="cbNotification"
+            android:summary="Enable to receive push alerts"
+            android:title="Push Notifications" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="Sound" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="cbSound"
+            android:summary="Enable sound"
+            android:title="Sound Notification" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Vibration" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="cbVibration"
+            android:summary="Enable vibration"
+            android:title="Vibration Notification" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

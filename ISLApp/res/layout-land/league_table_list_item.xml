@@ -1,0 +1,1006 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:scrollbars="none" >
+
+    <TableLayout
+        android:id="@+id/myTableLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:orientation="horizontal" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:padding="0.1dip" >
+
+            <TextView
+                android:id="@+id/team_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="P"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/team_logo"
+                android:layout_width="25dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="1dp"
+                android:contentDescription="@string/desc_list_item_icon"
+                android:gravity="center_vertical"
+                android:padding="1dp" />
+
+            <TextView
+                android:id="@+id/team_name"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Team"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_played"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="P "
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_won"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="W "
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_drawn"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="D "
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_lost"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="L "
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/goal_difference"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="GD"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/item_points"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Pts"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+        </TableRow>
+
+        <View
+            android:layout_height="0.01dip"
+            android:background="@android:color/darker_gray" />
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:padding="0.1dip" >
+
+            <TextView
+                android:id="@+id/team_pos1"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/team_logo1"
+                android:layout_width="25dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="1dp"
+                android:contentDescription="@string/desc_list_item_icon"
+                android:gravity="center_vertical"
+                android:padding="1dp"
+                android:src="@drawable/delhi" />
+
+            <TextView
+                android:id="@+id/team_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/delhi"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_played1"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_won1"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_drawn1"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_lost1"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/goal_difference1"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/item_points1"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+        </TableRow>
+
+        <View
+            android:layout_height="0.01dip"
+            android:background="@android:color/darker_gray" />
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:padding="0.1dip" >
+
+            <TextView
+                android:id="@+id/team_pos2"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/team_logo2"
+                android:layout_width="25dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="1dp"
+                android:contentDescription="@string/desc_list_item_icon"
+                android:gravity="center_vertical"
+                android:padding="1dp"
+                android:src="@drawable/goa" />
+
+            <TextView
+                android:id="@+id/team_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/goa"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_played2"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_won2"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_drawn2"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_lost2"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/goal_difference2"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/item_points2"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+        </TableRow>
+
+        <View
+            android:layout_height="0.01dip"
+            android:background="@android:color/darker_gray" />
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:padding="0.1dip" >
+
+            <TextView
+                android:id="@+id/team_pos3"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="3"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/team_logo3"
+                android:layout_width="25dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="1dp"
+                android:contentDescription="@string/desc_list_item_icon"
+                android:gravity="center_vertical"
+                android:padding="1dp"
+                android:src="@drawable/kerala" />
+
+            <TextView
+                android:id="@+id/team_name3"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/kerala"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_played3"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_won3"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_drawn3"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_lost3"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/goal_difference3"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/item_points3"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+        </TableRow>
+
+        <View
+            android:layout_height="0.01dip"
+            android:background="@android:color/darker_gray" />
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:padding="0.1dip" >
+
+            <TextView
+                android:id="@+id/team_pos4"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="0.01dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="4"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/team_logo4"
+                android:layout_width="25dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="1dp"
+                android:contentDescription="@string/desc_list_item_icon"
+                android:gravity="center_vertical"
+                android:padding="1dp"
+                android:src="@drawable/kolkata" />
+
+            <TextView
+                android:id="@+id/team_name4"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/kolkata"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_played4"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_won4"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_drawn4"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_lost4"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/goal_difference4"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/item_points4"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+        </TableRow>
+
+        <View
+            android:layout_height="0.01dip"
+            android:background="@android:color/darker_gray" />
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:padding="0.1dip" >
+
+            <TextView
+                android:id="@+id/team_pos5"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="5"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/team_logo5"
+                android:layout_width="25dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="1dp"
+                android:contentDescription="@string/desc_list_item_icon"
+                android:gravity="center_vertical"
+                android:padding="1dp"
+                android:src="@drawable/mumbai" />
+
+            <TextView
+                android:id="@+id/team_name5"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/mumbai"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_played5"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_won5"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_drawn5"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_lost5"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/goal_difference5"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/item_points5"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+        </TableRow>
+
+        <View
+            android:layout_height="0.01dip"
+            android:background="@android:color/darker_gray" />
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:padding="0.1dip" >
+
+            <TextView
+                android:id="@+id/team_pos6"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="6"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/team_logo6"
+                android:layout_width="25dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="1dp"
+                android:contentDescription="@string/desc_list_item_icon"
+                android:gravity="center_vertical"
+                android:padding="1dp"
+                android:src="@drawable/north_east" />
+
+            <TextView
+                android:id="@+id/team_name6"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/north_east"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_played6"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_won6"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_drawn6"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_lost6"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/goal_difference6"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/item_points6"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+        </TableRow>
+
+        <View
+            android:layout_height="0.01dip"
+            android:background="@android:color/darker_gray" />
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:padding="0.1dip" >
+
+            <TextView
+                android:id="@+id/team_pos7"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="7"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/team_logo7"
+                android:layout_width="25dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="1dp"
+                android:contentDescription="@string/desc_list_item_icon"
+                android:gravity="center_vertical"
+                android:padding="1dp"
+                android:src="@drawable/pune" />
+
+            <TextView
+                android:id="@+id/team_name7"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/pune"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_played7"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_won7"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_drawn7"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_lost7"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/goal_difference7"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/item_points7"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+        </TableRow>
+
+        <View
+            android:layout_height="0.01dip"
+            android:background="@android:color/darker_gray" />
+
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:padding="0.1dip" >
+
+            <TextView
+                android:id="@+id/team_pos8"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="8"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/team_logo8"
+                android:layout_width="25dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="1dp"
+                android:contentDescription="@string/desc_list_item_icon"
+                android:gravity="center_vertical"
+                android:padding="1dp"
+                android:src="@drawable/chennai" />
+
+            <TextView
+                android:id="@+id/team_name8"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/chennai"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_played8"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_won8"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_drawn8"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/matches_lost8"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/goal_difference8"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/item_points8"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+        </TableRow>
+
+        <View
+            android:layout_height="0.01dip"
+            android:background="@android:color/darker_gray" />
+    </TableLayout>
+
+</ScrollView>

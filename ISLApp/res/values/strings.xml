@@ -1,29 +1,55 @@
-<!--
-  Copyright 2013 The Android Open Source Project
-
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-      http://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
-  -->
-
 <resources>
+
     <string name="app_name">ISLAPP</string>
+    <string name="hello">Hello</string>
+
     <string-array name="items_array">
-        <item>My Team</item>
+        <item>All Fixtures</item>
+        <item>Live Fixtures</item>
+        <item>News Feed</item>
         <item>League Table</item>
-        <item>Leader-board</item>
-        <item>Settings</item>
+        <item>Feedback</item>
+        <item>Rate Us</item>
+        <item>Extras</item>
     </string-array>
+
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_action_collections_go_to_today</item>
+        <item>@drawable/ic_action_content_paste</item>
+        <item>@drawable/ic_action_social_chat</item>
+        <item>@drawable/ic_action_collections_view_as_list</item>
+        <item>@drawable/ic_action_content_email</item>
+        <item>@drawable/ic_action_rating_important</item>
+        <item>@drawable/ic_action_av_make_available_offline</item>
+    </array>
+    
+    <array name="league_table_icons">
+        <item>@drawable/kerala</item>
+        <item>@drawable/kolkata</item>
+        <item>@drawable/delhi</item>
+        <item>@drawable/goa</item>
+        <item>@drawable/north_east</item>
+        <item>@drawable/mumbai</item>
+        <item>@drawable/pune</item>
+        <item>@drawable/chennai</item>
+    </array>
+
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
-    <string name="action_websearch">Web search</string>
+    <string name="action_share">Share</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_settings">Settings</string>
     <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    <string name="kolkata">Atlético de Kolkata</string>
+    <string name="chennai">Chennaiyin</string>
+    <string name="delhi">Delhi Dynamos</string>
+    <string name="goa">Goa</string>
+    <string name="pune">Pune City</string>
+    <string name="kerala">Kerala Blasters</string>
+    <string name="mumbai">Mumbai City</string>
+    <string name="north_east">Northeast Utd</string>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
 </resources>
