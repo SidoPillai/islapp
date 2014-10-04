@@ -16,5 +16,5 @@ News Feeds and Live Matches will shown via webview.<br>
 We have added another push feature in sms where if you are not connected with a network but still wish to get the updates of the league just by sms the code in the extras column to 51115. Standard rates may apply.
 <b>Contributors:</b> <br>
 Prashanth Reddy - Webcontent<br>
-Subramanian Pillai - Content development<br>
+Subramanian Pillai - Content and Social Media<br>
 Siddesh Pillai - Idea, Design and development
