@@ -1,6 +1,11 @@
 islapp
 ======
 Application for scorecard based on live feeds. 
+Check out the app. 
+<a href="https://play.google.com/store/apps/details?id=com.islapp">
+  <img alt="Get it on Google Play"
+       src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
+</a>   
 
 For information on how to work with this repo.<br>
 Check out https://siddeshpillai.wordpress.com/2014/08/01/how-to-use-github/ <br>
